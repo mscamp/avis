@@ -1,0 +1,6 @@
+tinytuya
+flask
+beautifulsoup4
+vosk
+PyAudio
+requests
