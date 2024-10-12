@@ -34,16 +34,29 @@ def lights():
         bulb.turn_on()
         color = colors[command]
         bulb.set_colour(*color)
+        bulb.set_brightness_percentage(brightness)
+
+        if time != 0:
+            bulb.set_timer(time * 60)
+
         return f"Set color to {command}"
 
     elif command == "white":
         bulb.turn_on()
         bulb.set_white_percentage(brightness, 100) 
+
+        if time != 0:
+            bulb.set_timer(time * 60)
+
         return f"Set color to {command}"
 
     elif command == "yellow":
         bulb.turn_on()
         bulb.set_white_percentage(brightness, 0) 
+
+        if time != 0:
+            bulb.set_timer(time * 60)
+
         return f"Set color to {command}"
 
     elif command == "night" and time != 0:
