@@ -1,7 +1,10 @@
 #!/bin/bash
 
 # Install necessary packages
-sudo apt install portaudio19-dev espeak-ng mpv pulseaudio jackd -y
+sudo apt install python3 portaudio19-dev espeak-ng mpv pulseaudio jackd -y
+
+# Install tgpt
+curl -sSL https://raw.githubusercontent.com/aandrew-me/tgpt/main/install | bash -s /usr/local/bin
 
 # Remove pipewire
 sudo apt remove pipewire -y
