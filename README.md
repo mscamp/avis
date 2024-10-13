@@ -18,11 +18,11 @@ AVIS makes use of the following open-source libraries and software to function:
 - [Flask](https://pypi.org/project/Flask) to accept HTTP requests on the local network (to control my smart home devices from my phone using the app [HTTP Shortcuts](https://github.com/Waboodoo/HTTP-Shortcuts) or from my laptops using [curl](https://github.com/curl/curl)).
 - [tinytuya](https://pypi.org/project/tinytuya) to control my smart home devices using the Tuya API.
 - [requests](https://pypi.org/project/requests) and [beautifulsoup4](https://pypi.org/project/beautifulsoup4) for web scraping.
-- [tgpt](https://github.com/aandrew-me/tgpt) to answer voice queries using a GPT model.
+- [tgpt](https://github.com/aandrew-me/tgpt) to answer voice queries using GPT-4o mini (provided by DuckDuckGo).
 - [mpv](https://github.com/mpv-player/mpv) to play audio.
 
 ## Privacy
-Voice recognition and audio recording are done **locally**. However, be aware that tgpt sends your queries to OpenGPT providers, and tinytuya sends API calls to Tuya servers, which are closed-source and proprietary, requiring you to create an account. You can choose not to use AVIS to control smart home appliances if you prefer.
+Voice recognition and audio recording are done **locally**. However, be aware that tinytuya sends API calls to Tuya servers, which are closed-source and proprietary, requiring you to create an account. You can choose not to use AVIS to control smart home appliances if you prefer. The GPT model provider is DuckDuckGo, you can read about their privacy policy [here](https://duckduckgo.com/aichat/privacy-terms).
 
 ## Features
 - Answer generic questions.
